@@ -25,7 +25,7 @@ const HeroSection = () => {
               Desenvolvedor Backend Júnior focado em Go, Python e arquitetura limpa. 
               Construindo soluções robustas com código de qualidade.
             </p>
-            <div className="flex gap-4 mt-8 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-4 mt-8 justify-center md:justify-start">
               <a
                 href="https://github.com/MuriloFlores"
                 target="_blank"
@@ -41,6 +41,13 @@ const HeroSection = () => {
                 className="font-mono text-sm border border-border px-5 py-2.5 rounded-sm hover:border-primary hover:text-primary transition-colors duration-200 active:scale-[0.97]"
               >
                 LinkedIn ↗
+              </a>
+              <a
+                href="/curriculo_murilo_flores.pdf"
+                download
+                className="font-mono text-sm border border-border px-5 py-2.5 rounded-sm hover:border-primary hover:text-primary transition-colors duration-200 active:scale-[0.97]"
+              >
+                Currículo ↓
               </a>
               <a
                 href="mailto:muriloaflores@gmail.com"
