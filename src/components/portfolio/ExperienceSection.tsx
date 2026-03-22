@@ -3,24 +3,24 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 const experiences = [
   {
     company: "Fundação Getulio Vargas",
-    role: "Raspagem de Dados — Estágio",
+    role: "Estágio em Engenharia de Dados e Backend",
     period: "09/2025 – Atual",
     description:
-      "Análise e verificação de robôs de raspagem e pipelines ETL. Desenvolvimento de processos de verificação e controle de integridade de dados.",
+      "Liderança técnica na modernização de pipeline ETL crítico, migrando de modelo síncrono para arquitetura orientada a eventos com Apache Kafka. Integração com AWS S3 e Webhooks para persistência e notificação.",
   },
   {
     company: "NeoSyx",
-    role: "Suporte — Estágio",
+    role: "Estágio em Suporte e Banco de Dados",
     period: "07/2024 – 09/2025",
     description:
-      "Manutenção e otimização de bancos de dados (PostgreSQL, SQL Server, MongoDB). Atuação em equipe multidisciplinar com Scrum.",
+      "Manutenção e otimização de bancos relacionais e NoSQL (PostgreSQL, SQL Server, MongoDB). Diagnóstico de falhas e melhorias de desempenho em equipe multidisciplinar com Scrum.",
   },
   {
     company: "Stone",
     role: "Governança de TI — Jovem Aprendiz",
     period: "06/2022 – 04/2023",
     description:
-      "Monitoramento de bases de dados e gerenciamento de contratos de educação e telefonia.",
+      "Monitoramento de bases de dados corporativas e gerenciamento de contratos de TI (educação e telefonia).",
   },
 ];
 

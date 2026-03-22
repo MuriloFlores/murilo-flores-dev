@@ -28,9 +28,8 @@ const AboutSection = () => {
             aplicando DDD e boas práticas de engenharia de software.
           </p>
           <p>
-            Cursando Engenharia da Computação no{" "}
-            <span className="text-foreground">CEFET/RJ</span>. 
-            Experiência com containers Docker, integração com AWS e automação de processos ETL.
+            Cursando <span className="text-foreground">Ciência da Computação</span>. 
+            Experiência com containers Docker, integração com AWS, mensageria com Apache Kafka e automação de processos ETL.
           </p>
           <p>
             Perfil proativo e analítico, com interesse em sistemas distribuídos, 
