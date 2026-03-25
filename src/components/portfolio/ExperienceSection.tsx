@@ -1,31 +1,59 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const experiences = [
-  {
-    company: "Fundação Getulio Vargas",
-    role: "Estágio em Engenharia de Dados e Backend",
-    period: "09/2025 – Atual",
-    description:
-      "Liderança técnica na modernização de pipeline ETL crítico, migrando de modelo síncrono para arquitetura orientada a eventos com Apache Kafka. Integração com AWS S3 e Webhooks para persistência e notificação.",
-  },
-  {
-    company: "NeoSyx",
-    role: "Estágio em Suporte e Banco de Dados",
-    period: "07/2024 – 09/2025",
-    description:
-      "Manutenção e otimização de bancos relacionais e NoSQL (PostgreSQL, SQL Server, MongoDB). Diagnóstico de falhas e melhorias de desempenho em equipe multidisciplinar com Scrum.",
-  },
-  {
-    company: "Stone",
-    role: "Governança de TI — Jovem Aprendiz",
-    period: "06/2022 – 04/2023",
-    description:
-      "Monitoramento de bases de dados corporativas e gerenciamento de contratos de TI (educação e telefonia).",
-  },
-];
+const experiences = {
+  pt: [
+    {
+      company: "Fundação Getulio Vargas",
+      role: "Estágio em Engenharia de Dados e Backend",
+      period: "09/2025 – Atual",
+      description:
+        "Liderança técnica na modernização de pipeline ETL crítico, migrando de modelo síncrono para arquitetura orientada a eventos com Apache Kafka. Integração com AWS S3 e Webhooks para persistência e notificação.",
+    },
+    {
+      company: "NeoSyx",
+      role: "Estágio em Suporte e Banco de Dados",
+      period: "07/2024 – 09/2025",
+      description:
+        "Manutenção e otimização de bancos relacionais e NoSQL (PostgreSQL, SQL Server, MongoDB). Diagnóstico de falhas e melhorias de desempenho em equipe multidisciplinar com Scrum.",
+    },
+    {
+      company: "Stone",
+      role: "Governança de TI — Jovem Aprendiz",
+      period: "06/2022 – 04/2023",
+      description:
+        "Monitoramento de bases de dados corporativas e gerenciamento de contratos de TI (educação e telefonia).",
+    },
+  ],
+  en: [
+    {
+      company: "Fundação Getulio Vargas",
+      role: "Data Engineering & Backend Intern",
+      period: "09/2025 – Present",
+      description:
+        "Technical leadership in modernizing a critical ETL pipeline, migrating from a synchronous model to an event-driven architecture with Apache Kafka. Integration with AWS S3 and Webhooks for persistence and notification.",
+    },
+    {
+      company: "NeoSyx",
+      role: "Support & Database Intern",
+      period: "07/2024 – 09/2025",
+      description:
+        "Maintenance and optimization of relational and NoSQL databases (PostgreSQL, SQL Server, MongoDB). Fault diagnosis and performance improvements in a multidisciplinary team using Scrum.",
+    },
+    {
+      company: "Stone",
+      role: "IT Governance — Young Apprentice",
+      period: "06/2022 – 04/2023",
+      description:
+        "Monitoring corporate databases and managing IT contracts (education and telephony).",
+    },
+  ],
+};
 
 const ExperienceSection = () => {
   const { ref, isVisible } = useScrollReveal();
+  const { lang } = useLanguage();
+  const title = lang === "pt" ? "Experiência" : "Experience";
 
   return (
     <section className="py-24 border-t border-border" id="experience">
@@ -41,11 +69,11 @@ const ExperienceSection = () => {
       >
         <h2 className="text-2xl md:text-3xl font-bold mb-12">
           <span className="text-primary font-mono text-base mr-2">03.</span>
-          Experiência
+          {title}
         </h2>
 
         <div className="relative pl-8 border-l border-border space-y-12">
-          {experiences.map((exp, i) => (
+          {experiences[lang].map((exp, i) => (
             <div
               key={exp.company}
               className="relative"

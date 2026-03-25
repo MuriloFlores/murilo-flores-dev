@@ -1,26 +1,37 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const projects = [
-  {
-    title: "Store Manager API",
-    description:
-      "API RESTful em Go para gerenciamento de lojas e estoque, aplicando Clean Architecture e DDD.",
-    tags: ["Go", "REST", "PostgreSQL"],
-    github: "https://github.com/MuriloFlores",
-    live: null,
-  },
-  // Adicione novos projetos aqui seguindo o formato:
-  // {
-  //   title: "Nome do Projeto",
-  //   description: "Descrição breve do projeto.",
-  //   tags: ["Tech1", "Tech2"],
-  //   github: "https://github.com/...",
-  //   live: "https://...",
-  // },
-];
+const projects = {
+  pt: [
+    {
+      title: "Store Manager API",
+      description:
+        "API RESTful em Go para gerenciamento de lojas e estoque, aplicando Clean Architecture e DDD.",
+      tags: ["Go", "REST", "PostgreSQL"],
+      github: "https://github.com/MuriloFlores",
+      live: null,
+    },
+  ],
+  en: [
+    {
+      title: "Store Manager API",
+      description:
+        "RESTful API in Go for store and inventory management, applying Clean Architecture and DDD.",
+      tags: ["Go", "REST", "PostgreSQL"],
+      github: "https://github.com/MuriloFlores",
+      live: null,
+    },
+  ],
+};
 
 const ProjectsSection = () => {
   const { ref, isVisible } = useScrollReveal();
+  const { lang } = useLanguage();
+  const title = lang === "pt" ? "Projetos" : "Projects";
+  const hint =
+    lang === "pt"
+      ? <>Para adicionar novos projetos, edite o array <code className="font-mono text-primary text-xs">projects</code> em <code className="font-mono text-primary text-xs">ProjectsSection.tsx</code></>
+      : <>To add new projects, edit the <code className="font-mono text-primary text-xs">projects</code> array in <code className="font-mono text-primary text-xs">ProjectsSection.tsx</code></>;
 
   return (
     <section className="py-24 border-t border-border" id="projects">
@@ -36,15 +47,12 @@ const ProjectsSection = () => {
       >
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
           <span className="text-primary font-mono text-base mr-2">04.</span>
-          Projetos
+          {title}
         </h2>
-        <p className="text-muted-foreground text-sm mb-12 max-w-lg">
-          Para adicionar novos projetos, edite o array <code className="font-mono text-primary text-xs">projects</code> em{" "}
-          <code className="font-mono text-primary text-xs">ProjectsSection.tsx</code>
-        </p>
+        <p className="text-muted-foreground text-sm mb-12 max-w-lg">{hint}</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project, i) => (
+          {projects[lang].map((project, i) => (
             <div
               key={project.title}
               className="border border-border rounded-sm p-6 hover:border-primary/40 transition-colors duration-200 group"
