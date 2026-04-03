@@ -4,21 +4,21 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const projects = {
   pt: [
     {
-      title: "Order Manager",
+      title: "Store Manager",
       description:
-        "API RESTful em Go para gerenciamento de pedidos, aplicando Clean Architecture e DDD.",
+        "API RESTful em Go para gerenciamento de lojas e estoque, aplicando Clean Architecture e DDD.",
       tags: ["Go", "REST", "PostgreSQL"],
-      github: "https://github.com/MuriloFlores/order-manager",
+      github: "https://github.com/MuriloFlores/store-manager",
       live: null,
     },
   ],
   en: [
     {
-      title: "Order Manager",
+      title: "Store Manager",
       description:
-        "RESTful API in Go for order management, applying Clean Architecture and DDD.",
+        "RESTful API in Go for store and inventory management, applying Clean Architecture and DDD.",
       tags: ["Go", "REST", "PostgreSQL"],
-      github: "https://github.com/MuriloFlores/order-manager",
+      github: "https://github.com/MuriloFlores/store-manager",
       live: null,
     },
   ],
