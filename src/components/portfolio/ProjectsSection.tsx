@@ -28,11 +28,6 @@ const ProjectsSection = () => {
   const { ref, isVisible } = useScrollReveal();
   const { lang } = useLanguage();
   const title = lang === "pt" ? "Projetos" : "Projects";
-  const hint =
-    lang === "pt"
-      ? <>Para adicionar novos projetos, edite o array <code className="font-mono text-primary text-xs">projects</code> em <code className="font-mono text-primary text-xs">ProjectsSection.tsx</code></>
-      : <>To add new projects, edit the <code className="font-mono text-primary text-xs">projects</code> array in <code className="font-mono text-primary text-xs">ProjectsSection.tsx</code></>;
-
   return (
     <section className="py-24 border-t border-border" id="projects">
       <div
@@ -49,8 +44,6 @@ const ProjectsSection = () => {
           <span className="text-primary font-mono text-base mr-2">04.</span>
           {title}
         </h2>
-        <p className="text-muted-foreground text-sm mb-12 max-w-lg">{hint}</p>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects[lang].map((project, i) => (
             <div
