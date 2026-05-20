@@ -44,8 +44,6 @@ const ProjectsSection = () => {
           <span className="text-primary font-mono text-base mr-2">04.</span>
           {title}
         </h2>
-        <p className="text-muted-foreground text-sm mb-12 max-w-lg">{hint}</p>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects[lang].map((project, i) => (
             <div
