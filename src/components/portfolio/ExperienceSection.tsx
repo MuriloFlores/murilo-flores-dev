@@ -5,47 +5,61 @@ const experiences = {
   pt: [
     {
       company: "Fundação Getulio Vargas",
-      role: "Estágio em Engenharia de Dados e Backend",
-      period: "09/2025 – Atual",
+      role: "Engenharia de Dados (Data/Backend)",
+      period: "05/2026 – Atual",
       description:
-        "Liderança técnica na modernização de pipeline ETL crítico, migrando de modelo síncrono para arquitetura orientada a eventos com Apache Kafka. Integração com AWS S3 e Webhooks para persistência e notificação.",
+        "Projeto e sustentação de scripts de raspagem com Python (Selenium, SeleniumBase, Playwright) e estruturação de pipelines ETL end-to-end. Monitoramento de integridade em tempo real, conteinerização com Docker e governança de recursos na AWS, aplicando Clean Architecture e DDD para garantir código modular e escalável.",
+    },
+    {
+      company: "Fundação Getulio Vargas",
+      role: "Estágio em Raspagem de Dados (Data/Backend)",
+      period: "09/2025 – 05/2026",
+      description:
+        "Desenvolvimento e otimização de robôs de web scraping e pipelines ETL, aumentando a eficiência da extração diária em ~35%. Implementação de verificações de integridade que reduziram inconsistências no banco em 40% e aplicação de POO para diminuir o tempo de manutenção em 20%.",
     },
     {
       company: "NeoSyx",
-      role: "Estágio em Suporte e Banco de Dados",
+      role: "Estágio em Suporte Técnico (Foco em Banco de Dados)",
       period: "07/2024 – 09/2025",
       description:
-        "Manutenção e otimização de bancos relacionais e NoSQL (PostgreSQL, SQL Server, MongoDB). Diagnóstico de falhas e melhorias de desempenho em equipe multidisciplinar com Scrum.",
+        "Manutenção e otimização de bancos relacionais e NoSQL (PostgreSQL, SQL Server, MongoDB), melhorando o tempo de resposta de queries críticas em ~25%. Resolução média de 15+ chamados de nível 2 por semana em ambiente Scrum, reduzindo a indisponibilidade de ferramentas internas em 15%.",
     },
     {
       company: "Stone",
-      role: "Governança de TI — Jovem Aprendiz",
+      role: "Jovem Aprendiz de Governança de TI",
       period: "06/2022 – 04/2023",
       description:
-        "Monitoramento de bases de dados corporativas e gerenciamento de contratos de TI (educação e telefonia).",
+        "Monitoramento da integridade e confiabilidade de bases de dados corporativas e gestão da governança de contratos de telefonia e educação, assegurando 100% de compliance e otimizando o fluxo de renovações em colaboração com equipes técnicas.",
     },
   ],
   en: [
     {
       company: "Fundação Getulio Vargas",
-      role: "Data Engineering & Backend Intern",
-      period: "09/2025 – Present",
+      role: "Data Engineering (Data/Backend)",
+      period: "05/2026 – Present",
       description:
-        "Technical leadership in modernizing a critical ETL pipeline, migrating from a synchronous model to an event-driven architecture with Apache Kafka. Integration with AWS S3 and Webhooks for persistence and notification.",
+        "Designed and maintained sophisticated data scraping scripts using Python (Selenium, SeleniumBase, Playwright) and built end-to-end ingestion pipelines. Real-time integrity monitoring, Docker-based deployments and AWS resource governance, applying Clean Architecture and DDD for modular, scalable ETL systems.",
+    },
+    {
+      company: "Fundação Getulio Vargas",
+      role: "Data Scraping Intern (Data/Backend)",
+      period: "09/2025 – 05/2026",
+      description:
+        "Developed and optimized web scraping robots and ETL pipelines, increasing daily extraction efficiency by ~35%. Implemented strict integrity checks that reduced database inconsistencies by 40% and applied OOP principles to cut code maintenance time by 20%.",
     },
     {
       company: "NeoSyx",
-      role: "Support & Database Intern",
+      role: "Technical Support Intern (Database Focus)",
       period: "07/2024 – 09/2025",
       description:
-        "Maintenance and optimization of relational and NoSQL databases (PostgreSQL, SQL Server, MongoDB). Fault diagnosis and performance improvements in a multidisciplinary team using Scrum.",
+        "Maintenance and optimization of relational and NoSQL databases (PostgreSQL, SQL Server, MongoDB), improving critical query response time by ~25%. Resolved 15+ level-2 tickets per week in a Scrum environment, reducing internal tooling downtime by 15%.",
     },
     {
       company: "Stone",
-      role: "IT Governance — Young Apprentice",
+      role: "IT Governance Young Apprentice",
       period: "06/2022 – 04/2023",
       description:
-        "Monitoring corporate databases and managing IT contracts (education and telephony).",
+        "Monitored the integrity and reliability of corporate databases and managed governance of telephony and education contracts, ensuring 100% compliance and streamlining renewal workflows in collaboration with technical teams.",
     },
   ],
 };
