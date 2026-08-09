@@ -5,24 +5,24 @@ const experiences = {
   pt: [
     {
       company: "Fundação Getulio Vargas",
-      role: "Engenharia de Dados (Data/Backend)",
+      role: "Engenheiro de Dados e Backend",
       period: "05/2026 – Atual",
       description:
-        "Projeto e sustentação de scripts de raspagem com Python (Selenium, SeleniumBase, Playwright) e estruturação de pipelines ETL end-to-end. Monitoramento de integridade em tempo real, conteinerização com Docker e governança de recursos na AWS, aplicando Clean Architecture e DDD para garantir código modular e escalável.",
+        "Desenvolvimento e manutenção de aplicações internas full stack (Go, Python e JavaScript), criação e integração de APIs REST e automação de fluxos complexos. Modelagem e manutenção de bancos PostgreSQL, migração de pipelines para arquiteturas orientadas a eventos com Apache Kafka e AWS, e gestão do ciclo de vida das aplicações via Docker.",
     },
     {
       company: "Fundação Getulio Vargas",
       role: "Estágio em Raspagem de Dados (Data/Backend)",
       period: "09/2025 – 05/2026",
       description:
-        "Desenvolvimento e otimização de robôs de web scraping e pipelines ETL, aumentando a eficiência da extração diária em ~35%. Implementação de verificações de integridade que reduziram inconsistências no banco em 40% e aplicação de POO para diminuir o tempo de manutenção em 20%.",
+        "Desenvolvimento e otimização de pipelines de dados (ETL) em Python, aumentando a eficiência da extração diária em ~35%. Criação de verificações e testes de integridade que reduziram inconsistências no banco final em 40% e aplicação de POO para diminuir o tempo de manutenção do código em 20%.",
     },
     {
       company: "NeoSyx",
       role: "Estágio em Suporte Técnico (Foco em Banco de Dados)",
       period: "07/2024 – 09/2025",
       description:
-        "Manutenção e otimização de bancos relacionais e NoSQL (PostgreSQL, SQL Server, MongoDB), melhorando o tempo de resposta de queries críticas em ~25%. Resolução média de 15+ chamados de nível 2 por semana em ambiente Scrum, reduzindo a indisponibilidade de ferramentas internas em 15%.",
+        "Manutenção e otimização de bancos relacionais e NoSQL (PostgreSQL, SQL Server, MongoDB), melhorando o tempo de resposta de queries críticas em ~25%. Diagnóstico e correção de 15+ chamados de nível 2 por semana e colaboração em equipe multidisciplinar em ambiente Scrum, reduzindo a indisponibilidade de ferramentas internas em 15%.",
     },
     {
       company: "Stone",
@@ -35,24 +35,24 @@ const experiences = {
   en: [
     {
       company: "Fundação Getulio Vargas",
-      role: "Data Engineering (Data/Backend)",
+      role: "Data & Backend Engineer",
       period: "05/2026 – Present",
       description:
-        "Designed and maintained sophisticated data scraping scripts using Python (Selenium, SeleniumBase, Playwright) and built end-to-end ingestion pipelines. Real-time integrity monitoring, Docker-based deployments and AWS resource governance, applying Clean Architecture and DDD for modular, scalable ETL systems.",
+        "Develop and maintain internal full stack applications (Go, Python and JavaScript), building and integrating REST APIs and automating complex workflows. PostgreSQL data modeling and maintenance, migration of pipelines to event-driven architectures with Apache Kafka and AWS, and application lifecycle management with Docker.",
     },
     {
       company: "Fundação Getulio Vargas",
       role: "Data Scraping Intern (Data/Backend)",
       period: "09/2025 – 05/2026",
       description:
-        "Developed and optimized web scraping robots and ETL pipelines, increasing daily extraction efficiency by ~35%. Implemented strict integrity checks that reduced database inconsistencies by 40% and applied OOP principles to cut code maintenance time by 20%.",
+        "Developed and optimized Python ETL data pipelines, increasing daily extraction efficiency by ~35%. Built integrity checks and tests that reduced inconsistencies in the final database by 40% and applied OOP principles to cut code maintenance time by 20%.",
     },
     {
       company: "NeoSyx",
       role: "Technical Support Intern (Database Focus)",
       period: "07/2024 – 09/2025",
       description:
-        "Maintenance and optimization of relational and NoSQL databases (PostgreSQL, SQL Server, MongoDB), improving critical query response time by ~25%. Resolved 15+ level-2 tickets per week in a Scrum environment, reducing internal tooling downtime by 15%.",
+        "Maintenance and optimization of relational and NoSQL databases (PostgreSQL, SQL Server, MongoDB), improving critical query response time by ~25%. Diagnosed and fixed 15+ level-2 tickets per week and collaborated with a multidisciplinary Scrum team, reducing internal tooling downtime by 15%.",
     },
     {
       company: "Stone",

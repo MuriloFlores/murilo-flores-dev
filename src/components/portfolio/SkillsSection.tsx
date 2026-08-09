@@ -3,16 +3,24 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const skillGroups = {
   pt: [
-    { category: "Linguagens", items: ["Go", "Python", "Java", "JavaScript", "TypeScript", "PHP", "C"] },
-    { category: "Bancos de Dados", items: ["PostgreSQL", "MySQL", "MongoDB", "SQL Server"] },
-    { category: "Infra & Cloud", items: ["Docker", "Docker Compose", "AWS", "Redis"] },
-    { category: "Padrões & Arquitetura", items: ["DDD", "Clean Architecture", "SOLID", "RESTful APIs"] },
+    { category: "Linguagens", items: ["Go", "C#", "Python", "TypeScript", "JavaScript", "Java", "PHP"] },
+    { category: "Back-end & APIs", items: ["APIs REST", "ASP.NET Core", "Node.js", "Apache Kafka"] },
+    { category: "Front-end", items: ["React", "Angular", "Vue.js", "HTML", "CSS"] },
+    { category: "Bancos de Dados", items: ["PostgreSQL", "SQL Server", "MySQL", "MongoDB"] },
+    { category: "Cloud & Infra", items: ["Docker", "Docker Compose", "AWS", "Redis"] },
+    { category: "Testes & Versionamento", items: ["xUnit", "Testes unitários", "Git", "GitHub", "Code review"] },
+    { category: "Padrões & Arquitetura", items: ["Clean Architecture", "DDD", "SOLID"] },
+    { category: "Metodologias", items: ["Scrum", "Kanban"] },
   ],
   en: [
-    { category: "Languages", items: ["Go", "Python", "Java", "JavaScript", "TypeScript", "PHP", "C"] },
-    { category: "Databases", items: ["PostgreSQL", "MySQL", "MongoDB", "SQL Server"] },
-    { category: "Infra & Cloud", items: ["Docker", "Docker Compose", "AWS", "Redis"] },
-    { category: "Patterns & Architecture", items: ["DDD", "Clean Architecture", "SOLID", "RESTful APIs"] },
+    { category: "Languages", items: ["Go", "C#", "Python", "TypeScript", "JavaScript", "Java", "PHP"] },
+    { category: "Back-end & APIs", items: ["REST APIs", "ASP.NET Core", "Node.js", "Apache Kafka"] },
+    { category: "Front-end", items: ["React", "Angular", "Vue.js", "HTML", "CSS"] },
+    { category: "Databases", items: ["PostgreSQL", "SQL Server", "MySQL", "MongoDB"] },
+    { category: "Cloud & Infra", items: ["Docker", "Docker Compose", "AWS", "Redis"] },
+    { category: "Testing & Versioning", items: ["xUnit", "Unit testing", "Git", "GitHub", "Code review"] },
+    { category: "Patterns & Architecture", items: ["Clean Architecture", "DDD", "SOLID"] },
+    { category: "Methodologies", items: ["Scrum", "Kanban"] },
   ],
 };
 
