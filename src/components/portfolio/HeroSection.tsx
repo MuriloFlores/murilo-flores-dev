@@ -26,7 +26,7 @@ const HeroSection = () => {
     <section className="min-h-screen flex items-center">
       <div className="container py-24">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-border shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-border shrink-0 transition-all duration-500">
             <img
               src={muriloPhoto}
               alt="Murilo Flores"
