@@ -4,6 +4,14 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const projects = {
   pt: [
     {
+      title: "BankPoly",
+      description:
+        "Clone multiplayer do Banco Imobiliário como estudo de arquitetura: domínio isolado da infraestrutura (Clean Architecture, DDD, Domain Events) e testes unitários com xUnit.",
+      tags: ["C#", ".NET", "ASP.NET Core", "xUnit"],
+      github: "https://github.com/MuriloFlores/BankPoly",
+      live: null,
+    },
+    {
       title: "Store Manager",
       description:
         "API RESTful em Go para gerenciamento de lojas e estoque, aplicando Clean Architecture e DDD.",
@@ -13,6 +21,14 @@ const projects = {
     },
   ],
   en: [
+    {
+      title: "BankPoly",
+      description:
+        "Multiplayer Monopoly clone built as an architecture study: domain isolated from infrastructure (Clean Architecture, DDD, Domain Events) and unit tests with xUnit.",
+      tags: ["C#", ".NET", "ASP.NET Core", "xUnit"],
+      github: "https://github.com/MuriloFlores/BankPoly",
+      live: null,
+    },
     {
       title: "Store Manager",
       description:
@@ -46,9 +62,12 @@ const ProjectsSection = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects[lang].map((project, i) => (
-            <div
+            <a
               key={project.title}
-              className="border border-border rounded-sm p-6 hover:border-primary/40 transition-colors duration-200 group"
+              href={project.github ?? project.live ?? "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block border border-border rounded-sm p-6 hover:border-primary/40 transition-colors duration-200 group"
               style={{
                 opacity: isVisible ? 1 : 0,
                 transform: isVisible ? "translateY(0)" : "translateY(12px)",
@@ -73,27 +92,17 @@ const ProjectsSection = () => {
               </div>
               <div className="flex gap-4">
                 {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-xs text-muted-foreground hover:text-primary transition-colors duration-200"
-                  >
+                  <span className="font-mono text-xs text-muted-foreground group-hover:text-primary transition-colors duration-200">
                     [GitHub]
-                  </a>
+                  </span>
                 )}
                 {project.live && (
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-xs text-muted-foreground hover:text-primary transition-colors duration-200"
-                  >
+                  <span className="font-mono text-xs text-muted-foreground group-hover:text-primary transition-colors duration-200">
                     [Live Demo]
-                  </a>
+                  </span>
                 )}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
